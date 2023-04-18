@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HitThePlate</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>HitThePlate</h1>
+        </div>
+        <div class="menu">
+          <li><a href="Index.html" >Home</a>
+          <a href="#makeaapost.html" onclick="openPage('makeapost.html')">Make a post</a>
+          <a href="#plateprofile" onclick="openPage('plateprofile')">Plate Profile</a>
+          <button onclick="openLogin()">Login</button>
+        </div>
+      </nav>
+      <div class="intro">
+
+
+		<header style="background-color: #fff; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+			<h1 style="font-size: 3rem; font-weight: bold; margin: 0; color: #405DE6;">Welcome</h1>
+			<h2 style="font-size: 2rem; font-weight: normal; margin: 0; color: #586069;">Are you ready to HitThePlate?</h2>
+			<p style="font-size: 1.5rem; font-weight: normal; margin: 0; color: #586069;">Connect with people and share your favorite workouts easily!</p>
+			<button style="background-color: #405DE6; color: #fff; padding: 1rem 2rem; border-radius: 50px; font-size: 1.5rem; font-weight: bold; border: none; margin-top: 2rem; cursor: pointer;">Jump In now!</button>
+		  </header>
+		  
+
+
+
+      </div>
+    </header>
+	<html>
+  <head>
+    <style>
+      body {
+        background-image: url("IMG/gym.jpg");
+      }
+    </style>
+  </head>
+  <body>
+	
+
+
+    <main>
+      <section id="home" class="tabcontent">
+        <h2>Home</h2>
+        <p>Discover new workouts and connect with friends!</p>
+      </section>
+
+      <section id="makepost" class="tabcontent">
+        <h2>Make a post</h2>
+		<l><a href="makeapost.html"></l>Make Post</a>
+
+        <form>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" required></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <section id="plateprofile" class="tabcontent">
+        <h2>Plate Profile</h2>
+        <p>View your profile and edit your information.</p>
+      </section>
+
+      <div id="login" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeLogin()">&times;</span>
+          <h2>Login/Register</h2>
+          <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <input type="submit" value="Login" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="/JS/Index.js"></script>
+  </body>
+</html>

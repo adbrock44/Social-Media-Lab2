@@ -1,0 +1,116 @@
+/* reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* set global font and background color */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+}
+
+/* style the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* style the logo */
+.logo h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* style the menu */
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.menu ul li a:hover {
+  color: #f00;
+}
+
+/* style the container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* style the form */
+.form-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  resize: vertical;
+}
+
+.form-group textarea {
+  min-height: 200px;
+}
+
+button[type="submit"] {
+  display: block;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #f00;
+  border: 2px solid #f00;
+}
